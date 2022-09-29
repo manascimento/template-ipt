@@ -1,0 +1,80 @@
+%
+% Instituto de Pesquisas Tecnológicas (IPT) - Master Thesis Template for LaTeX
+%
+% Public version 1.0
+% 2022 Marcelo Nascimento for Master Thesis Template
+%
+% THIS IS THE MAIN FILE
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% NOTE:                                                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% * First pages are located in "pretextual" folder,         %
+%   please see the "pretextual_main.tex" file.              %
+%                                                           %
+% * Chapter pages are located in "textual" folder,          %
+%   please see the "textual_main.tex" file.                 %
+%                                                           %
+% * Last pages are located in "posttextual" folder,         %
+%   please see the "posttextual_main.tex" file.             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Packages that is not provided by the template.      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% IMPORTANT:                                                %
+% Prefer include your packages in 'mypackages.tex' file.    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% +--------------------------------+
+% |            Labels              |
+% +---------+----------------------+
+% | acro:   | acronym              |
+% +---------+----------------------+
+% | alg:    | algorithm            |
+% +---------+----------------------+
+% | ann:    | annex                |
+% +---------+----------------------+
+% | app:    | appendix             |
+% +---------+----------------------+
+% | board : | quadro               |
+% +---------+----------------------+
+% | ch:     | chapter              |
+% +---------+----------------------+
+% | eq:     | equation             |
+% +---------+----------------------+
+% | fig:    | figure               |
+% +---------+----------------------+
+% | itm:    | enumerated list item |
+% +---------+----------------------+
+% | lst:    | code listing         |
+% +---------+----------------------+
+% | sec:    | section              |
+% +---------+----------------------+
+% | subsec: | subsection           |
+% +---------+----------------------+
+% | tab:    | table                |
+% +---------+----------------------+
+% | target: | anchor               |
+% +---------+----------------------+
+
+\documentclass{thesis}
+
+\input{packages/mypackages}
+
+\begin{document}
+
+% Pages like title, auhtor's declaration, etc.
+\input{pretextual/pretextual_main}
+
+% The page number on right side
+\pagestyle{myheadings}
+
+% Chapters
+\input{textual/textual_main}
+
+% Pages like references, glossary, etc.
+\input{posttextual/posttextual_main}
+
+\end{document}

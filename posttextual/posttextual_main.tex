@@ -1,0 +1,60 @@
+% Bibliography
+\printbibliography[heading=bibintoc,title={REFERÊNCIAS}]
+\thispagestyle{myheadings} %Change Page number location
+\pagebreak
+
+% Complementary bibliography
+\begin{refsection}[./references/unusedreferences.bib]
+  \nocite{*}
+  \printbibliography[heading=bibintoc,title={BIBLIOGRAFIA COMPLEMENTAR}]
+  \thispagestyle{myheadings} %Change Page number location
+  \pagebreak
+\end{refsection}
+
+% Glossary
+\printglossary[title={GLOSSÁRIO},toctitle=GLOSSÁRIO,style=mystyle,nonumberlist]
+\pagebreak
+
+% Appendix
+\appendix
+\begin{appendices}
+
+% Changes the title formatting only the appendix
+\titleformat{\chapter}{\normalfont\normalsize\bfseries}{\chaptertitlename{} \thechapter\space--}{.5em}{\MakeUppercase}
+
+% Add to Table of Content (TOC) 
+\addtocontents{toc} {
+  \protect\renewcommand{\protect\cftchapaftersnum}{\space\textendash\space}
+  \addtolength{\cftchapnumwidth}{3pt}
+}
+
+% Chapters
+\chapter{PRIMEIRO} \label{app:appendixa} \input{posttextual/appendices/appendix_a}
+\pagebreak
+
+\chapter{SEGUNDO} \label{app:appendixb}
+\input{posttextual/appendices/appendix_b}
+\pagebreak
+
+\end{appendices}
+
+% Annex
+\newcounter{anncounter}
+
+\stepcounter{anncounter}
+\phantomsection
+\addcontentsline{toc}{chapter}{ANEXO \Alph{anncounter} -- Primeiro}
+\chapter*{ANEXO \Alph{anncounter} -- Primeiro} \label{ann:annexa}
+\input{posttextual/annex/annex_a}
+\pagebreak
+
+\stepcounter{anncounter}
+\phantomsection
+\addcontentsline{toc}{chapter}{ANEXO \Alph{anncounter} -- Segundo}
+\chapter*{ANEXO \Alph{anncounter} -- Segundo} \label{ann:annexb}
+\input{posttextual/annex/annex_b}
+\pagebreak
+
+% Index
+\printindex
+\thispagestyle{myheadings} % Change Page number location

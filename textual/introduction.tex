@@ -1,0 +1,47 @@
+Some basic ways to manipulate text are \textit{italics} and \textbf{bold}. One can reference Figures (see Figure \ref{fig:ipt} for an example) as well as cite references, which are defined in the \textit{references.bib} file.\parencite{Rosa2020ModeloServicos}
+
+The \textit{Bibliography}\index{bibliography}, \textit{List of Figures} and \textit{List of Tables} are all automatically generated and references will be updated automatically as well. This means that if you've defined a citation but are not referencing it, it will not appear in the \textit{Bibliography}. This also means that any Figure / Table / Citations numbers are automatically updated as well. Numbering is done by order-of-appearance.
+
+One can create an itemized list:
+\begin{itemize}
+    \item item a
+    \item item b
+    \item ...
+\end{itemize}
+
+Or enumerate them:
+\begin{enumerate}
+    \item item x
+    \item item y
+    \item ...
+\end{enumerate}
+
+\begin{figure}[h]
+  \centering
+  \caption{\textit{An image of the IPT logo.}}
+  \label{fig:ipt}
+  \includegraphics[width=.5\textwidth]{figures/ipt.jpg}
+  \objectsource{author}
+\end{figure}
+
+A table with three columns can be seen in Table \ref{board:requirements}.
+\begin{table}[H]
+  \centering
+  \board{A simple quadro}
+  \label{board:requirements}
+  \begin{tabularx}{\textwidth} { 
+    | >{\raggedright\arraybackslash}X 
+    | >{\raggedright\arraybackslash}X 
+    | >{\raggedright\arraybackslash}X | }
+   \hline
+   \textbf{Nr} & \textbf{Req} & \textbf{Weight} \\
+   \hline
+    1 & Price & High \\
+   \hline
+    2 & Support & Middle \\
+   \hline
+    3 & Variety & Low \\
+  \hline
+  \end{tabularx}
+  \objectsource{author}
+\end{table}

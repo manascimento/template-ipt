@@ -1,0 +1,80 @@
+% Suppress page number
+\pagestyle{empty}
+
+% Title Page (Required)
+\input{pretextual/titlepage}
+\pagebreak
+
+% Back Page (Do Not Print)
+\input{pretextual/backpage}
+\pagebreak
+
+% Approval Page (Required)
+\input{pretextual/approvalpage}
+\pagebreak
+
+% Set page counter to page one
+\setcounter{page}{1}
+
+% Qualification Page (Required)
+\input{pretextual/qualificationpage}
+\pagebreak
+
+% Catalog Sheet (Required)
+\input{pretextual/catalogsheet}
+\pagebreak
+
+% Errata (Optional)
+\input{pretextual/errata}
+\pagebreak
+
+% Dedication Page (Optional)
+\input{pretextual/dedication}
+\pagebreak
+
+% Acknowledgments Page (Optional)
+\input{pretextual/acknowledgments}
+\pagebreak
+
+% Abstract Page In Portuguese (Required)
+\input{pretextual/abstractpt}
+\pagebreak
+
+% Abstract Page In English (Required)
+\input{pretextual/abstracten}
+\pagebreak
+
+% Remove the space inserted between table and figure caption entries between chapters
+\begingroup
+  \renewcommand*{\addvspace}[1]{}
+
+  % List of Figures or illustrations (Required)
+  \listoffigures
+  \thispagestyle{empty} % Hide page number
+  \pagebreak
+
+  % List of Tables (Required) 
+  \listoftables
+  \thispagestyle{empty} % Hide page number
+  \pagebreak
+\endgroup
+
+% List of Boards (Optional)
+\listofboards
+\thispagestyle{empty} % Hide page number
+\pagebreak
+
+% Terms and Abbreviations (Required)
+\input{pretextual/terms_abbreviations}
+\pagebreak
+
+% List of Symbols (Required)
+\input{pretextual/symbol_list}
+\printnomenclature
+\thispagestyle{empty} % Hide page number
+\pagebreak
+
+% Table of Contents (Required)
+\tableofcontents
+\thispagestyle{empty}
+\pagebreak
