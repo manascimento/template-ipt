@@ -3,3 +3,12 @@
 
 # Modelo para dissertação de mestrado do IPT
 Modelo para escrita de dissertação de mestrado do curso de computação aplicação do Instituto de Pesquisas Tecnológicas do Estado de São Paulo.
+
+## Estrutura de pastas
+TODO
+
+## Principais arquivos
+TODO
+
+## Utilização recomendada
+TODO
