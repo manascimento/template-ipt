@@ -11,3 +11,5 @@ jobs:
         with:
           root_file: main.tex
           latexmk_use_xelatex: true
+        env:
+          TEXINPUTS: ".:./packages/biblatex-abnt//:./classes//:"
