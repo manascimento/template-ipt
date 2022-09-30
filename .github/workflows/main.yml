@@ -22,5 +22,3 @@ jobs:
             fc-cache -f
         env:
           TEXINPUTS: ".:./packages/biblatex-abnt//:./classes//:"
-        run: |
-          echo Passo executado com sucesso.
