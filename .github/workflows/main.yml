@@ -1,9 +1,12 @@
-name: Build IPT LaTeX document
+name: Build IPT LaTeX Thesis
 run-name: Build Document by @${{ github.actor }}
 on:
   push:
     branches:
       - main
+    paths-ignore:
+      - '**.md'
+      - '**.yml'
 jobs:
   build_latex:
     runs-on: ubuntu-latest
