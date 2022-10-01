@@ -3,7 +3,7 @@
 
 % Class name
 \ProvidesClass{thesis}[2020/07/01
-                       v1.0
+                       v1.1.0
                        IPT Template (Marcelo Nascimento)]
 
 % Load class name with the listed options
@@ -27,6 +27,9 @@
 
 % Fonts
 \RequirePackage{fontspec}
+
+% Fix footnote position at the bottom of the page
+\RequirePackage[bottom]{footmisc}
 
 % Provides commands to change the page layout in the middle of a document
 \RequirePackage{changepage}
@@ -329,7 +332,22 @@
 \titlespacing*{\subsection}{0pt}{1.5ex}{1.5ex}
 \titlespacing*{\subsubsection}{0pt}{1.5ex}{1.5ex}
 
-% PDF settings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                     ENVIRONMENTS                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Dedication page
+\newenvironment{dedication}[1]{
+  \begin{center}
+    \textbf{#1}
+  \end{center}
+  \par
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                     PDF SETTINGS                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \hypersetup{
     pdfauthor={\authorname},
     pdftitle={\doctitle},
