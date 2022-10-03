@@ -97,9 +97,6 @@
 % Commands for formatting dates, times
 \RequirePackage[portuges]{datetime2}
 
-% Write in Markdown on Overleaf / Latex
-\RequirePackage[hybrid]{markdown}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                 EDIT BELOW THIS LINE                      %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
