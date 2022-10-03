@@ -1,4 +1,4 @@
-[![made-with-latex](https://img.shields.io/badge/Made%20with-LateX-blue?logo=Latex)](https://www.latex-project.org/) [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com/manascimento/template-ipt) [![CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey?logo=Creative%20Commons)](http://creativecommons.org/licenses/by/4.0/) [![template-Overleaf-green](https://img.shields.io/badge/Template-Overleaf-green?logo=Overleaf)](https://www.overleaf.com/latex/templates/ipt-dissertacao/txmkjzcmcdnn) [![Build IPT LaTeX document](https://github.com/manascimento/template-ipt/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/manascimento/template-ipt/actions/workflows/main.yml)
+[![made-with-latex](https://img.shields.io/badge/Made%20with-LateX-blue?logo=Latex)](https://www.latex-project.org/) [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com/manascimento/template-ipt) [![CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey?logo=Creative%20Commons)](http://creativecommons.org/licenses/by/4.0/) [![template-Overleaf-green](https://img.shields.io/badge/Template-Overleaf-green?logo=Overleaf)](https://www.overleaf.com/latex/templates/ipt-dissertacao/txmkjzcmcdnn) [![Build IPT LaTeX document](https://github.com/manascimento/template-ipt/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/manascimento/template-ipt/actions/workflows/main.yml) [![version](https://img.shields.io/badge/version-v1.0.0-blue)](https://img.shields.io/badge/version-v1.0.0-blue)
 
 # Modelo para dissertação de mestrado do IPT
 Modelo para escrita de dissertação de mestrado do curso de computação aplicação do Instituto de Pesquisas Tecnológicas do Estado de São Paulo.
@@ -14,8 +14,6 @@ Abaixo são descritas informações sobre todos os diretório.
 - O diretório `pretextual` contém todos os elementos pré-textuais conforme guia o IPT;
 - O diretório `textual` contém todos os elementos textuais conforme o guia do IPT;
 - O diretório `posttextual` contém todos os elementos elementos pós-textuais.
-
-TODO
 
 ## Principais arquivos
 Abaixo são listados os arquivos que podem ser editados para iniciar a escrita da dissertação por meio deste modelo (*template*).
