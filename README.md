@@ -6,7 +6,7 @@ Modelo para escrita de dissertação de mestrado do curso de computação aplica
 ## Estrutura de pastas
 Abaixo são descritas informações sobre todos os diretório.
 
-- O diretório `classes` são armazenaddas todas as classes do projeto;
+- O diretório `classes` são armazenadas todas as classes do projeto;
 - O diretório `figures` são armazenadas todas as figuras do projeto;
 - O diretório `index` é armazenado o modelo do índice;
 - O diretório `packages` são armazenados todos os arquivos de pacotes necessários do projeto;
