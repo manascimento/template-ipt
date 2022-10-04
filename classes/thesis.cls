@@ -198,6 +198,9 @@
 % Path for figures / images
 \graphicspath{{./figures/}}
 
+% Set page style of the ToC, LoF and/or LoT
+\tocloftpagestyle{empty}
+
 % Removes the link between 'figure' and 'chapter'
 \counterwithout{figure}{chapter}
 
@@ -248,6 +251,9 @@
 
 % Displays the page number on top of the page in the outer corner
 \assignpagestyle{\chapter}{myheadings}
+
+% Redefining a macro to remove the page number in the symbol list.
+\renewcommand{\nompreamble}{\thispagestyle{empty}}
 
 % Changes font for acronym (bold removed)
 \renewcommand*{\acsfont}[1]{\normalfont #1}
@@ -329,17 +335,44 @@
 \titlespacing*{\subsection}{0pt}{1.5ex}{1.5ex}
 \titlespacing*{\subsubsection}{0pt}{1.5ex}{1.5ex}
 
+% Does not generate warnings for Overfull < 1pt
+\hfuzz=1pt
+\vfuzz\hfuzz
+
+% Does not generate warnings for Underfull with badness < 1000
+\hbadness=1000
+\vbadness=1000
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                     ENVIRONMENTS                          %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Dedication page
-\newenvironment{dedication}[1]{
+\newenvironment{defaultformatting}[1]{
   \begin{center}
     \textbf{#1}
   \end{center}
   \par
 }
+
+% Abstract (pt) page
+\newenvironment{abstractpt}{
+  \begin{center}
+    \textbf{RESUMO}
+  \end{center}
+  \par
+}
+{\newline \noindent \textbf{Palavras-chave}: \palavraschave}
+
+% Abstract (en) page
+\newenvironment{abstracten}{
+  \begin{center}
+    \textbf{ABSTRACT}
+    \par \textbf{\doctitle}
+  \end{center}
+  \par
+}
+{\newline \noindent \textbf{Keywords}: \keywords}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                     PDF SETTINGS                          %
