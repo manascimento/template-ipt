@@ -159,8 +159,9 @@
 \newcommand{\signaturedate}{\textunderscore\textunderscore\textunderscore\textunderscore\textunderscore\slash\textunderscore\textunderscore\textunderscore\textunderscore\textunderscore\slash\textunderscore\textunderscore\textunderscore\textunderscore\textunderscore\textunderscore}
 
 % Source for Figures, Tables, etc
+\newcommand{\objectsourceauthor}{Elaborado pelo autor.}
 \newcommand{\objectsource}[1]{
-  \break\textbf{Fonte:\space}\ifthenelse{\equal{#1}{author}}{Elaborado pelo autor.}{#1}
+  \break\textbf{Fonte:\space}#1
 }
 
 % Quote for more than three lines
