@@ -356,6 +356,22 @@
   \par
 }
 
+% Dedication page
+\newenvironment{dedication}{
+  \begin{center}
+    \textbf{DEDICATÓRIA}
+  \end{center}
+  \par
+}
+
+% Acknowledgments page
+\newenvironment{acknowledgments}{
+  \begin{center}
+    \textbf{AGRADECIMENTOS}
+  \end{center}
+  \par
+}
+
 % Abstract (pt) page
 \newenvironment{abstractpt}{
   \begin{center}
@@ -363,7 +379,7 @@
   \end{center}
   \par
 }
-{\newline \noindent \textbf{Palavras-chave}: \palavraschave}
+{\newline\newline\noindent\textbf{Palavras-chave}: \palavraschave}
 
 % Abstract (en) page
 \newenvironment{abstracten}{
@@ -373,7 +389,7 @@
   \end{center}
   \par
 }
-{\newline \noindent \textbf{Keywords}: \keywords}
+{\newline\newline\noindent\textbf{Keywords}: \keywords}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                     PDF SETTINGS                          %
