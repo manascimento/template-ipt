@@ -37,4 +37,8 @@ Abaixo é uma sugestão de utilização, mas não precisa ser necessariamente ne
 
 ## Modelo Overleaf
 
-Este modelo pode ser utilizado localmente no seu ambiente, mas se desejar o mesmo está disponível na galeria de templates do Overleaf.
+Este modelo pode ser utilizado em ambiente local, mas se desejar o mesmo está disponível na galeria de templates do Overleaf.
+
+## Restrições
+
+Como o modelo utiliza a fonte Arial, certifique-se que esta fonte esteja instalada no ambiente operacional.
