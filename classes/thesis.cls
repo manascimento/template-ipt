@@ -88,9 +88,6 @@
 % Extension of tabular which has an additional column designator
 \RequirePackage{tabularx}
 
-% Conditional commands
-\RequirePackage{ifthen}
-
 % Provides macros manipulating strings
 \RequirePackage{xstring}
 
@@ -127,13 +124,13 @@
 % Keywords for abstract in Portuguese
 \newcommand{\palavraschave}{Palavras, chaves, separadas, por, virgula, aplicada, a, sua, dissertação}
 
-% Year of the publication (defaults to current month).
+% Month of the publication (defaults to current month).
 % You can hard code the value by replacing the parameter with a text
-\newcommand{\thesismonth}{\StrLeft{\DTMportugesmonthname{\the\month}}{3}.}
+\newcommand{\thesismonth}{MMM.}
 
-% Year of the publication (defaults to current year).
+% Year of the publication (Four Digits).
 % You can hard code the value by replacing the parameter with a text
-\newcommand{\thesisyear}{\the\year}
+\newcommand{\thesisyear}{AAAA}
 
 % Name of list of figure (lof)
 \newcommand{\lofname}{Lista de Figuras}
@@ -347,14 +344,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                     ENVIRONMENTS                          %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Dedication page
-\newenvironment{defaultformatting}[1]{
-  \begin{center}
-    \textbf{#1}
-  \end{center}
-  \par
-}
 
 % Dedication page
 \newenvironment{dedication}{
