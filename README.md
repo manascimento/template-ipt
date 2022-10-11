@@ -19,7 +19,7 @@ Abaixo são descritas informações sobre todos os diretórios.
 Abaixo são listados os principais arquivos que podem ser editados para iniciar a escrita da dissertação por meio deste modelo (*template*).
 
 - O arquivo `main.tex` é o arquivo de inicialização que orquestra toda a estrutura do modelo;
-- O arquivo `packages/mypackages.tex` contém informações estruturais da dissertação, tais como: título, autor, etc.
+- O arquivo `userpreamble.sty` contém informações estruturais da dissertação, tais como: título, autor, etc.
 - O arquivo `pretextual/pretextual_main.tex` organiza todos os elementos pré-textuais conforme guia o IPT;
 - O arquivo `textual/textual_main.tex` organiza todos os elementos textuais conforme o guia do IPT;
 - O arquivo `posttextual/posttextual_main.tex` organiza todos os elementos pós-textuais conforme guia o IPT.
@@ -28,7 +28,7 @@ Abaixo são listados os principais arquivos que podem ser editados para iniciar 
 
 Abaixo é uma sugestão de utilização, mas não precisa ser necessariamente nesta ordem.
 
-- Edite o arquivo `mypackages.tex` e personalize-o com todos os dados da sua dissertação;
+- Edite o arquivo `userpreamble.sty` e personalize-o com todos os dados da sua dissertação;
 - Edite os arquivos que representam os elementos pré-textuais e acrescente as informações de acordo com sua dissertação;
 - Edite o arquivo `pretextual_main.tex` e personalize-o com todos os capítulos da sua dissertação;
 - Edite os arquivos que representam os elementos pós-textuais e personalize-os como desejar;
