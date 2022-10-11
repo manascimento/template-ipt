@@ -236,17 +236,6 @@
 % Path for glossary definitions
 \loadglsentries{./posttextual/glossaries}
 
-% 
-\newglossarystyle{mystyle}{
-  % base this style on the listgroup style
-  \setglossarystyle{listgroup}
-  \renewcommand*{\glossentry}[2]{
-    \item[\glsentryitem{##1}
-      \glstarget{##1}{\glossentryname{##1}:}]
-     \glossentrydesc{##1}\glspostdescription\space ##2
-  }
-}
-
 % Displays the page number on top of the page in the outer corner
 \assignpagestyle{\chapter}{myheadings}
 
