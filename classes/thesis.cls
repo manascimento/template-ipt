@@ -52,9 +52,6 @@
 % Package load recommended by biblatex
 \RequirePackage{csquotes}
 
-% Glossary
-\RequirePackage[toc]{glossaries}
-
 % Appendix
 \RequirePackage[titletoc,title]{appendix}
 
@@ -75,6 +72,10 @@
 
 % Make links clickable
 \RequirePackage[hidelinks]{hyperref}
+
+% Glossary
+% Must be after hyperref package
+\RequirePackage[toc]{glossaries}
 
 % Manage images
 \RequirePackage{graphicx}
