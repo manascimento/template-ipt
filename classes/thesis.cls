@@ -206,6 +206,9 @@
 % Removes the link between 'table' and 'chapter'
 \counterwithout{table}{chapter}
 
+% Removes the link between 'footnote' and 'chapter'
+\counterwithout{footnote}{chapter}
+
 % Control the depth of the table of contents
 \setcounter{tocdepth}{3}
 
