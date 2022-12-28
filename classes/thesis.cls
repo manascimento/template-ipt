@@ -111,10 +111,19 @@
 % Main supervisor
 \newcommand{\supervisor}{[Supervisor's Name]}
 \newcommand{\supervisortitle}{[Academic degree]}
+\newcommand{\supervisorinstitution}{[Institution's Name]}
 
 % Co-supervisor. If you have only one supervisor, leave it as it is
 \newcommand{\cosupervisor}{[Co-Supervisor's Name]}
 \newcommand{\cosupervisortitle}{[Academic degree]}
+
+% Board member - ONE
+\newcommand{\membernameone}{[Member's Name]}
+\newcommand{\memberinstitutionone}{[Institution's Name]}
+
+% Board member - TWO
+\newcommand{\membernametwo}{[Member's Name]}
+\newcommand{\memberinstitutiontwo}{[Institution's Name]}
 
 % Knowledge area
 \newcommand{\knowledgearea}{[Knowledge area]}
