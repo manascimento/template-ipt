@@ -167,6 +167,7 @@
 
 % Source for Figures, Tables, etc
 \newcommand{\objectsourceauthor}{Elaborado pelo autor.}
+\newcommand{\objectsourceadaptedfrom}[1]{Adaptado de #1.}
 \newcommand{\objectsource}[1]{
   \break\textbf{Fonte:\space}#1
 }
