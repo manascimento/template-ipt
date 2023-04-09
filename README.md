@@ -3,6 +3,8 @@
 # Modelo para dissertação de mestrado do IPT
 Modelo para escrita de dissertação de mestrado do curso de computação aplicação do Instituto de Pesquisas Tecnológicas do Estado de São Paulo.
 
+Este modelo foi elaborado seguindo as regras do arquivo *Guia para elaboração da dissertação de mestrado e monografias*, onde constam as diretrizes e normas para elaborar e formatar as dissertações do IPT disponível no SAPIENS.
+
 ## Estrutura de pastas
 Abaixo são descritas informações sobre todos os diretórios.
 
@@ -10,6 +12,7 @@ Abaixo são descritas informações sobre todos os diretórios.
 - O diretório `figures` são armazenadas todas as figuras;
 - O diretório `index` é armazenado o *layout* do índice;
 - O diretório `packages` são armazenados todos os pacotes necessários do modelo;
+- O diretório `pdfs` são armazenados todos os arquivos PDFs que serão usados na dissertação;
 - O diretório `references` são armazenados os arquivos para referências bibliográficas (arquivos `.bib`);
 - O diretório `pretextual` contém todos os elementos pré-textuais conforme guia do IPT;
 - O diretório `textual` contém todos os elementos textuais conforme guia do IPT;
@@ -18,8 +21,9 @@ Abaixo são descritas informações sobre todos os diretórios.
 ## Principais arquivos
 Abaixo são listados os arquivos estruturais do modelo (*template*).
 
-- O arquivo `main.tex` é o arquivo de inicialização que orquestra toda a estrutura do modelo;
-- O arquivo `userpreamble.sty` contém informações estruturais da dissertação, tais como: título, autor, etc.
+- O arquivo `thesis.cls` contém todos pacotes e as principais regras da estrutura do modelo (*evite alterar este arquivo*);
+- O arquivo `userpreamble.sty` contém informações estruturais da dissertação, tais como: título, autor, etc;
+- O arquivo `main.tex` é responsável por orquestrar toda a estrutura do modelo;
 - O arquivo `pretextual/pretextual_main.tex` organiza todos os elementos pré-textuais conforme guia do IPT;
 - O arquivo `textual/textual_main.tex` organiza todos os elementos textuais conforme o guia do IPT;
 - O arquivo `posttextual/posttextual_main.tex` organiza todos os elementos pós-textuais conforme guia do IPT.
