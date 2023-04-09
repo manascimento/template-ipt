@@ -19,7 +19,7 @@
 \appendix
 \begin{appendices}
 
-% Changes the title formatting only the appendix
+% Change the title formatting only for the appendix
 \titleformat{\chapter}{\normalfont\normalsize\bfseries}{\chaptertitlename{} \thechapter\space--}{.5em}{\MakeUppercase}
 
 % Add to Table of Content (TOC) 
@@ -35,25 +35,30 @@
 \chapter{SEGUNDO} \label{app:appendixb}
 \input{posttextual/appendices/appendix_b}
 \pagebreak
-
 \end{appendices}
 
 % Annex
-\newcounter{anncounter}
+% The strategy here was to use the appendices environment variable to create the annex section.
+\begin{appendices}
 
-\stepcounter{anncounter}
-\phantomsection
-\addcontentsline{toc}{chapter}{ANEXO \Alph{anncounter} -- PRIMEIRO}
-\chapter*{ANEXO \Alph{anncounter} -- PRIMEIRO} \label{ann:annexa}
+% Change the title to annex
+\renewcommand{\appendixname}{ANEXO}
+
+% Restart the counter for annex
+\setcounter{chapter}{0}
+
+% Change the title formatting only for the annex
+\titleformat{\chapter}{\normalfont\normalsize\bfseries}{\chaptertitlename{} \thechapter\space--}{.5em}{\MakeUppercase}
+
+% Chapters
+\chapter{PRIMEIRO} \label{ann:annexa}
 \input{posttextual/annex/annex_a}
 \pagebreak
 
-\stepcounter{anncounter}
-\phantomsection
-\addcontentsline{toc}{chapter}{ANEXO \Alph{anncounter} -- SEGUNDO}
-\chapter*{ANEXO \Alph{anncounter} -- SEGUNDO} \label{ann:annexb}
+\chapter{SEGUNDO} \label{ann:annexb}
 \input{posttextual/annex/annex_b}
 \pagebreak
+\end{appendices}
 
 % Index
 \printindex
